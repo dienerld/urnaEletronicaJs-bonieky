@@ -92,8 +92,8 @@ const Candidate = () => {
 			return `${candidate.name}  PARTIDO: ${candidate.partido}`;
 		}
 	})[0];
-	const { name, partido } = api;
 	if (api) {
+		const { name, partido } = api;
 		return `\n${name}\nPartido: ${partido}`;
 	} else {
 		return `VOTO NULO`;
