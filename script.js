@@ -93,7 +93,11 @@ const Candidate = () => {
 		}
 	})[0];
 	const { name, partido } = api;
-	return `\n${name}\nPartido: ${partido}`;
+	if (api) {
+		return `\n${name}\nPartido: ${partido}`;
+	} else {
+		return `VOTO NULO`;
+	}
 };
 
 const handleClickConfirm = () => {
