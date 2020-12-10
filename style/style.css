@@ -1,0 +1,176 @@
+@keyframes pisca {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.2;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.body {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.urna {
+	background-color: #dbd5c9;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+}
+/* TELA */
+.screen {
+	width: 500px;
+	height: 320px;
+	display: flex;
+	border: 2px solid #555;
+	background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+	flex-direction: column;
+}
+
+/* INFO CANDIDATO E FOTO */
+.candidate {
+	padding: 5px;
+	display: flex;
+	flex: 1;
+}
+
+.text-vote {
+	padding: 5px;
+
+	height: 40px; /* ALTURA */
+	display: flex;
+	align-items: center;
+}
+
+.text-voting {
+	padding: 5px;
+
+	height: 40px; /* ALTURA */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.number-candidate {
+	height: 60px;
+	padding: 5px;
+}
+
+.number-display {
+	padding: 5px;
+	display: inline-block;
+	border: 1px solid #000;
+	height: 40px;
+	width: 30px;
+	margin: 2px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 2rem;
+}
+
+.pisca {
+	animation-name: pisca;
+	animation-duration: 2 s;
+	animation-iteration-count: infinite;
+}
+
+.panel-candidate {
+	flex: 1;
+}
+
+.photo-candidates {
+	width: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.image {
+	border: 1px solid #000;
+	background-color: #fff;
+	text-align: center;
+}
+
+.image.small {
+	margin-top: 5px;
+	width: 80%;
+	font-size: 0.7rem;
+}
+.image img {
+	width: 100%;
+}
+
+.info-candidate {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	line-height: 25px;
+}
+
+.alert-big {
+	font-size: 2rem;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+}
+
+/* RODAPE */
+.footer {
+	padding: 5px;
+
+	margin-bottom: 4px;
+	display: flex;
+	border-top: 2px solid #000;
+}
+
+/* KEYBOARD */
+.keyboard {
+	margin-left: 30px;
+	background-color: #403a3a;
+}
+
+.keyboard-line {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.keyboard-button {
+	display: flex;
+	width: 70px; /*comprimento*/
+	height: 40px; /*altura*/
+	background-color: #000900;
+	color: #fff;
+	font-size: 2rem;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.button-branco {
+	font-size: 0.85rem;
+	font-weight: 600;
+	background-color: #fff;
+	color: #000;
+}
+
+.button-corrige {
+	font-size: 0.8rem;
+	font-weight: 600;
+	background-color: #f09046;
+	color: #000;
+}
+
+.button-confirma {
+	font-size: 0.8rem;
+	font-weight: 800;
+	background-color: #48c079;
+	color: #000;
+	width: 85px;
+	height: 45px;
+}

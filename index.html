@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Urna eletrônica</title>
+	</head>
+	<body>
+		<div class="urna">
+			<div class="screen">
+				<div class="candidate">
+					<div class="panel-candidate">
+						<div class="text-vote">
+							<span>SEU VOTO PARA</span>
+						</div>
+						<div class="text-voting">
+							<span>VEREADOR</span>
+						</div>
+						<div class="number-candidate">
+							<div class="number-display pisca"></div>
+							<div class="number-display"></div>
+						</div>
+						<div class="info-candidate">
+							<span> NOME: LULA </span>
+							<span> PARTIDO: PT</span>
+							<span> VICE-PREFEITO: BOULOS</span>
+						</div>
+					</div>
+					<div class="photo-candidates">
+						<div class="image">
+							<img src="/Urna-js/media/12345.jpeg" alt="" />
+							PREFEITO
+						</div>
+						<div class="image small">
+							<img src="/Urna-js/media/32.png" alt="" />
+							VICE-PREFEIT0
+						</div>
+					</div>
+				</div>
+				<div class="footer">
+					Aperte a TECLA: <br />
+					CONFIRMA para CONFIRMAR este voto <br />
+					CORRIGEpara REINICIAR este voto
+				</div>
+			</div>
+			<div class="keyboard">
+				<div class="keyboard-line">
+					<button class="keyboard-button" onclick="handleClick('1')">1</button>
+					<button class="keyboard-button" onclick="handleClick('2')">2</button>
+					<button class="keyboard-button" onclick="handleClick('3')">3</button>
+				</div>
+				<div class="keyboard-line">
+					<button class="keyboard-button" onclick="handleClick('4')">4</button>
+					<button class="keyboard-button" onclick="handleClick('5')">5</button>
+					<button class="keyboard-button" onclick="handleClick('6')">6</button>
+				</div>
+				<div class="keyboard-line">
+					<button class="keyboard-button" onclick="handleClick('7')">7</button>
+					<button class="keyboard-button" onclick="handleClick('8')">8</button>
+					<button class="keyboard-button" onclick="handleClick('9')">9</button>
+				</div>
+				<div class="keyboard-line">
+					<button class="keyboard-button" onclick="handleClick('0')">0</button>
+				</div>
+				<div class="keyboard-line">
+					<button
+						class="keyboard-button button-branco"
+						onclick="handleClickWhite()"
+					>
+						BRANCO
+					</button>
+					<button
+						class="keyboard-button button-corrige"
+						onclick="handleClickCorrect()"
+					>
+						CORRIGE
+					</button>
+					<button
+						class="keyboard-button button-confirma"
+						onclick="handleClickConfirm()"
+					>
+						CONFIRMA
+					</button>
+				</div>
+			</div>
+		</div>
+		<script src="./etapas.js"></script>
+		<script src="./script.js"></script>
+		<link rel="stylesheet" href="./style/style.css" />
+	</body>
+</html>
